@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://www.kaggle.com/sandhyasivaji/sandhya-team-4/edit/run/81421272 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="./sandhya.team-4 _ Kaggle_files/icon" rel="stylesheet"><style>@import url('https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i');
+    @import url("https://use.typekit.net/tql2nih.css");
+
+    html,
+    body {
+      font-family: Inter, sans-serif;
+      height: 100%;
+      margin: 0;
+    }
+
+    .header {
+      padding: 0;
+    }
+
+    #root {
+      height: 100%;
+    }</style><meta name="description" content="The Kaggle Kernels IDE for Data Scientists."><script type="text/javascript" async="" src="./sandhya.team-4 _ Kaggle_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-yF7E1ktGfbA26NWZZupkIgKSvH2WmFG90KyY3BzFp06blZkjALcng9gGnuW5hlae" nonce=""></script><script type="text/javascript" async="" src="./sandhya.team-4 _ Kaggle_files/js" nonce=""></script><script type="text/javascript" async="" src="./sandhya.team-4 _ Kaggle_files/analytics.js.download" nonce=""></script><script nonce="" defer="defer" src="./sandhya.team-4 _ Kaggle_files/notebook-6cac39bef3eb4621e92e.js.download"></script><link href="./sandhya.team-4 _ Kaggle_files/notebook-d87a57f6d2f539250512.css" rel="stylesheet">
+
+          <script nonce="">window.KAGGLE_JUPYTERLAB_PATH = "/static/dist/jupyterlab/jupyterlab-index-5d9e81f2e41d28584db7.html";</script>
+          
+<title>sandhya.team-4 | Kaggle</title>
+<meta property="description" content="The Kaggle Notebooks IDE for Data Scientists.">
+
+<style data-styled="active" data-styled-version="5.3.0"></style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-mui-ripple-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #3f51b5;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.08);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 16px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #3f51b5;
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.08);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-contained:hover {
+  background-color: #d5d5d5;
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-sizeSmall {
+  padding: 4px 8px;
+  font-size: 0.8125rem;
+}
+.MuiButton-sizeLarge {
+  padding: 8px 24px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  color: #ffffff;
+  margin: 8px 4px 8px 0;
+  padding: 7px 0;
+  background: #00A7E5;
+  line-height: 12px;
+  text-transform: none;
+}
+.jss1:hover {
+  filter: brightness(96%);
+}
+.jss2 {
+  color: #ffffff;
+  margin: 8px 0;
+  padding: 7px 0;
+  background: #00A7E5;
+  line-height: 12px;
+  text-transform: none;
+}
+.jss2:hover {
+  filter: brightness(96%);
+}
+.jss3 {
+  color: #ffffff;
+  margin: 8px 8px 8px 12px;
+  padding: 7px 8px 7px 8px;
+  background: #00A7E5;
+  line-height: 12px;
+  text-transform: none;
+}
+.jss3:hover {
+  filter: brightness(96%);
+}
+.jss4 {
+  color: #ffffff;
+  margin: 8px 0 8px 8px;
+  padding: 7px 8px 7px 8px;
+  background: #00A7E5;
+  line-height: 12px;
+  text-transform: none;
+}
+.jss4:hover {
+  filter: brightness(96%);
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiInputBase">
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1875em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputSelect {
+  padding-right: 24px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiInput">
+.MuiInput-root {
+  position: relative;
+}
+label + .MuiInput-formControl {
+  margin-top: 16px;
+}
+.MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #303f9f;
+  pointer-events: none;
+}
+.MuiInput-underline.Mui-focused:after {
+  transform: scaleX(1);
+}
+.MuiInput-underline.Mui-error:after {
+  transform: scaleX(1);
+  border-bottom-color: #f44336;
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.Mui-disabled:before {
+  border-bottom-style: dotted;
+}
+@media (hover: none) {
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+}
+</style><style data-jss="" data-meta="MuiTextField">
+
+</style><style data-jss="" data-meta="makeStyles">
+.jss5 {
+  left: -8px;
+  position: relative;
+  margin-top: 6px;
+  flex-direction: row;
+}
+.jss6 {
+  margin: 2px;
+}
+.jss7 {
+  padding: 2px 7px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  text-overflow: ellipsis;
+}
+.jss8 {
+  margin: auto 0px auto 6px;
+  padding: 0px;
+}
+.jss9 {
+  font-size: 20px;
+  visibility: hidden;
+  margin-left: 8px;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #3f51b5;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.08);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #f50057;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.08);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss2278 {
+  padding: 5px;
+}
+</style><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style><script id="google-recaptcha-v3" src="./sandhya.team-4 _ Kaggle_files/api.js.download"></script><link id="dynamic-favicon" rel="shortcut icon" href="https://www.kaggle.com/favicon.ico"><style id="detectElementResize" type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; z-index: -1; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style></head><body class=""><div id="root"><div style="--mdc-theme-on-primary:#fff; --mdc-theme-on-surface:rgba(0, 0, 0, 0.87); --mdc-theme-text-primary-on-background:rgba(0, 0, 0, 0.87); --mdc-theme-text-secondary-on-background:rgba(0, 0, 0, 0.54); --mdc-theme-text-hint-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-text-disabled-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-text-icon-on-background:rgba(0, 0, 0, 0.38); --mdc-theme-primary:#20BEFF; --mdc-theme-error:#F58B8A; --mdc-theme-background:#F8F8F8; --mdc-theme-surface:#fff; --mdc-theme-primary-bg:#20BEFF; --mdc-theme-secondary-bg:#919294;"><div tabindex="-1" style="outline: none; height: inherit;"><div aria-live="assertive" aria-atomic="true" aria-hidden="true" class="sc-ckXLN enbxRL mdc-snackbar mdc-snackbar--leading"><div class="mdc-snackbar__surface"><div role="status" aria-live="polite" class="mdc-snackbar__label"><div style="display: none;"></div></div><div class="mdc-snackbar__actions"></div></div></div><div class="sc-fyjqAk sc-gXZlLH fBNjwk diJvOm"><div class="sc-bFSbwS bAKETB"><div class="sc-dTSzeu krkYvd"><div class="sc-htmcrh dEAiVW"><button aria-label="menu" class="sc-jSFjdj rSeVs undefined google-material-icons">menu</button></div><a href="https://www.kaggle.com/sandhyasivaji/sandhya-team-4/edit/run/81421272#site-content" class="sc-jlZJtj QgNfY">Skip to<br>content</a><div class="sc-cbeScs gVreXZ"><a href="https://www.kaggle.com/"><img src="./sandhya.team-4 _ Kaggle_files/site-logo.png" alt="Kaggle" class="sc-ljsmAU jFDlvU"></a></div></div></div><div class="sc-fxFQKN ejoSBg"><button class="sc-iXeHaJ bmWaic"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 30L20 16L16 20L16 30L20 30Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20 20L30 20L30 16L20 16L20 20Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 20L20 16L15.937 16L6 16L6 20L16 20Z" fill="#20BEFF"></path><rect x="20" y="16" width="4" height="10" transform="rotate(-180 20 16)" fill="#20BEFF"></rect></svg><span class="sc-cxNHIi sc-lmgQwP sc-jLqRGG ctyHFD hpRDUw gvjXWi">Create</span></button><div aria-hidden="true" class="mdc-menu sc-dvXYtj iZXdKV sc-bUQyIj exIfBg mdc-menu-surface" style="transform-origin: left top; left: 0px; top: 0px; max-height: 689px;"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">code</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">New Notebook</p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">table_chart</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">New Dataset</p></div></div></div></div></div><div class="sc-fyGvY fLibQH"><div class="sc-cjzNjn cIJaKN"><div class="sc-cGKJhA fTwFWY"><div class="sc-JsfZP jfHbDg"><div class="sc-kTCsyW fBlwjg"><div class="sc-flUlpA ialjKz"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-irKDMX bptyfe">search</i><input placeholder="Search" aria-label="Search" class="sc-eXuyPJ cHIuyC" value=""></div></div></div><ul class="km-list"><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">explore</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">Home</p></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/competitions"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">emoji_events</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">Competitions</p></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/datasets"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">table_chart</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">Datasets</p></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN dmJDpg sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/code"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-hYRTwp iRaesw">code</i><p class="sc-hHEiqL sc-dlMDgC cfjwnM kpPvTx" style="padding-left: 20px;">Code</p><div class="sc-tsGVs bumONY"></div></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/discussion"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">comment</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">Discussions</p></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/learn"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">school</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">Courses</p></a></div></li><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dSnXvR dnOdJJ"><a class="sc-khIgEk hQhHpX" href="https://www.kaggle.com/sandhyasivaji/sandhya-team-4/edit/run/81421272#"><i emphasis="low" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy yTsEt sc-hYRTwp iRaesw">expand_more</i><p class="sc-hHEiqL sc-dlMDgC kKuVBj kpPvTx" style="padding-left: 20px;">More</p></a></div></li></ul></div></div><div class="sc-Jgsit bNqXxX"><div class="mdc-menu-surface--anchor"><button class="sc-fThslM exkjiw"><div class="sc-gRGMhz eBEFmJ"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-cviYoQ bsmEAT">auto_awesome_motion</i><div color="#FAE041" class="sc-gRYxWZ bAmYiH">1</div></div><p class="sc-hHEiqL sc-dlMDgC sc-bTmvSn kKuVBj kpPvTx jcWJXH">View Active Events</p></button></div></div></div></div><div data-testid="searchContainer" class="sc-jwhXbD bBvJIf"><div></div><div class="sc-gyPLnS cQlRDr"><div></div></div></div><div id="site-content" class="sc-dbXCOC dhLLIO"><div class="sc-ehALMs carCnm"></div><div data-testid="notebook-editor-render-tid" class="AppView--16eb2j kMYsPa"><div class="Header_Body--rbwidn bNHwOx"><div></div><div class="Header_MainHeader--uoui3c bwjhpx"><div class="Header_MenuIconWrapper--izyttq hRjeVx"><button aria-label="menu" class="sc-jSFjdj rSeVs undefined google-material-icons">menu</button></div><div class="Header_MenuWrapper--19vw76b cUqOsr"><div class="Header_TitleWrapper--qrpum5 gzVOKw"><div class="MuiFormControl-root jss5" aria-describedby="component-error-text"><div class="TitleInput_ShrinkingTitleWrapper--163ctwl eDeLye"><div class="TitleInput_TextFieldWrapper--1dch7vu eVWhhG"><div class="MuiFormControl-root MuiTextField-root sc-hQYpqk cDuRCe jss6 MuiFormControl-fullWidth"><div class="MuiInputBase-root MuiInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"><input aria-invalid="false" autocomplete="off" class="MuiInputBase-input MuiInput-input jss7" id="notebook-title-input" type="text" maxlength="50" value="sandhya.team-4"></div></div></div><div class="jss9">sandhya.team-4_</div></div></div><div class="SaveStatus_Body--1fefpx ccmZEx">Draft saved</div></div><div class="Header_MenuBarWrapper--ebv0r9 fFpNML"><div class="EditorMenuBar_Body--5mokqd kTRSnY"><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">File</span></button><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">Edit</span></button><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">View</span></button><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">Run</span></button><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">Add-ons</span></button><button class="MuiButtonBase-root MuiButton-root sc-fTFMiz bgBOOL MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label">Help</span></button></div></div></div><div class="ShareButton_ButtonWrapper--asiu8k gWYNZf"><button class="sc-EZqKI kgDOZu ShareButton_StyledButton--1ewahb4 hrZYny" tabindex="0" role="button"><i color="#202124" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">people</i><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Share</span></button></div><div class="sc-cvdZrU cZUyCc"><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_d637f462-6395-432f-bb46-3fbad5cfc8de" currentitem="false" style="vertical-align: top;"><button class="sc-EZqKI bGdNGQ sc-fTZpSt hxacgB" tabindex="0" role="button"><i color="#FFFFFF" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy eoZVBq">update</i><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Save Version</span></button><div class="__react_component_tooltip t9787f916-092a-41bf-acab-43699d2ff269 place-bottom type-dark" id="tooltip_components_d637f462-6395-432f-bb46-3fbad5cfc8de" data-id="tooltip" style="left: 820px; top: 52px;"><style aria-hidden="true">
+  	.t9787f916-092a-41bf-acab-43699d2ff269 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t9787f916-092a-41bf-acab-43699d2ff269.place-top {
+        margin-top: -10px;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-bottom {
+        margin-top: 10px;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-left {
+        margin-left: -10px;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-right {
+        margin-left: 10px;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t9787f916-092a-41bf-acab-43699d2ff269.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Save a new version of your work.</div></div></div><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_eac77a0d-24b5-480e-9380-f7f69f8193ca" currentitem="false" style="vertical-align: top;"><button class="sc-EZqKI vMBwD sc-bTJQgd iGtsib" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">3</span></button><div class="__react_component_tooltip t5050bd4f-6d48-4e82-ac4f-02c414c30406 place-bottom type-dark" id="tooltip_components_eac77a0d-24b5-480e-9380-f7f69f8193ca" data-id="tooltip" style="left: 964px; top: 52px;"><style aria-hidden="true">
+  	.t5050bd4f-6d48-4e82-ac4f-02c414c30406 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-top {
+        margin-top: -10px;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-bottom {
+        margin-top: 10px;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-left {
+        margin-left: -10px;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-right {
+        margin-left: 10px;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t5050bd4f-6d48-4e82-ac4f-02c414c30406.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Show versions</div></div></div></div><div class="Header_ToggleSidebarWrapper--1lxmrkg byiRBQ"><button aria-label="Toggle sidebar visibility" title="Toggle sidebar visibility" class="sc-jSFjdj rSeVs undefined google-material-icons">last_page</button></div></div></div><div class="App_Body--16c8j4p lpnlFZ"><div class="Layout_Body--6piylv eLqbAs"><div mode="column" class="Layout_BodyInner--61tklw knSkgK"><div class="Pane--1eb69nk hloyDn"><div class="TabRenderer_Body--1jz0s1e jRCDGV"><div class="Toolbar_Body--qufi13 pvBsu"><div class="ToolbarActionsLeft_Body--1evf1n3 hLeorx"><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Add cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">add</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Delete cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">delete</i></button><div class="ToolbarSeparator--mupx0l fCnQnS"></div><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Cut cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">content_cut</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Copy cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">content_copy</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Paste cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">content_paste</i></button><div class="ToolbarSeparator--mupx0l fCnQnS"></div><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Run current cell"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">play_arrow</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo labeled" title="Run all"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">fast_forward</i><div class="ToolbarAction_Label--1qf3dyz iWBQbB">Run All</div></button><div class="ToolbarSeparator--mupx0l fCnQnS"></div><div class="mdc-menu-surface--anchor"><button class="sc-EZqKI iAregl" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Code</span><i color="#202124" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">arrow_drop_down</i></button></div></div><div class="Toolbar_Spacer--10wxpnx keOPql"></div><button class="sc-halSCM Status_Body--15eqbxr gzAmHc dKHZQS"><div class="SessionStatusIndicator_Body--iyymxk eRtexG"><div class="SessionStatusIndicator_StatusLeft--106w180 kNYsnn"><i color="#42E3BB" sizevalue="1.125em" title="Running" verticalalign="-0.125em" class="rmwc-icon google-material-icons sc-gKAaRy byRrGX">circle</i><div class="SessionStatusIndicator_StatusTitle--10lqtkn hEtyoP">Draft Session</div></div><div class="SessionStatusIndicator_TimerBody--g3ej6t ktXQXv">(14h:5m)</div></div><div title="Disk Space Usage" class="sc-gDsWzL hQEVKF"><div class="sc-hzyZDe hYbGrw">HDD</div><div class="sc-LvPXS kjLjHl"><div value="46194688" max="21003583488" class="sc-iiKPOH cUMJGx"></div></div></div><div class="Status_MenuSeparator--p0dmmg hSREhc"></div><div title="CPU Usage" class="sc-gDsWzL hQEVKF"><div class="sc-hzyZDe hYbGrw">CPU</div><div class="sc-LvPXS kjLjHl"><div value="0" max="100" class="sc-iiKPOH iHBZXp"></div></div></div><div class="Status_MenuSeparator--p0dmmg hSREhc"></div><div title="RAM Usage" class="sc-gDsWzL hQEVKF"><div class="sc-hzyZDe hYbGrw">RAM</div><div class="sc-LvPXS kjLjHl"><div value="872312832" max="17179869184" class="sc-iiKPOH bjdBiA"></div></div></div></button><div class="ToolbarActionsRight_Body--1muxuky hIJZRc"><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Stop session"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">power_settings_new</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="Factory reset"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">loop</i></button><button class="sc-halSCM ToolbarAction_Body--ybo8q3 gzAmHc gOgLXo" title="More"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">more_vert</i></button></div></div><div class="Editor_Body--1bhm27d khCcvg"><div class="sc-iArHnM eZzCtJ"></div><div class="SessionlessEditor_FrameContainer--1qf26to kLqJVm" style="display: flex;"><iframe name="" class="" src="./sandhya.team-4 _ Kaggle_files/jupyterlab-index-5d9e81f2e41d28584db7.html"></iframe></div><div aria-live="assertive" aria-atomic="true" aria-hidden="true" class="sc-ckXLN enbxRL mdc-snackbar mdc-snackbar--leading"><div class="mdc-snackbar__surface"><div role="status" aria-live="polite" class="mdc-snackbar__label"><div style="display: none;"></div></div><div class="mdc-snackbar__actions"></div></div></div></div><div class="sc-gVPcaA hXaxHY ProgressSnackbarContainer_ProgressSnackbarWrapper--avjqt1 frfaIc"><div class="sc-ddIsst gjcLUR"><div _size="xlarge" class="rmwc-circular-progress rmwc-circular-progress--size-xlarge rmwc-circular-progress--indeterminate rmwc-circular-progress--thickerstroke"><svg class="rmwc-circular-progress__circle" viewBox="0 0 48 48"><circle class="rmwc-circular-progress__path" cx="24" cy="24" r="20"></circle></svg></div></div><div class="sc-gdtylu cQHmLv"><div class="sc-dUfFlh daNqxv">Creating Save &amp; Run All Version</div><div class="sc-eQlIoA ikTMGn"></div></div><div class="sc-hrnFwn bUoZAT"></div><div class="sc-intIzG isPSSz"><button aria-label="close" class="sc-jSFjdj rSeVs sc-gefPzt cdsbba google-material-icons">close</button><button class="sc-EZqKI bGHMMK" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Stop</span></button></div></div></div></div></div></div><div class="Sidebar_Body--14r4g35 cpPuDm"><div class="sc-jYKCQm hvgDcX" style="position: relative; flex-basis: 300px; display: flex; flex-direction: row; max-height: 100%; height: 100%;"><div direction="horizontal" class="sc-bxLXlR cbeqiD"><div role="separator" aria-orientation="horizontal"></div></div><div style="width: 300px;"><div class="Sidebar_ScrollableArea--1i9c81d HsZor"><div class="SidebarPane_Body--1owv1gk hobDGk"><div role="button" class="SidebarPane_ItemHeader--13ydw5o jmOAMS"><div class="SidebarPane_TitleWrapper--1mt9ft2 hKOChs">Data</div><div class="SidebarPane_ButtonWrapper--1siykkc fvXTbe"><button class="sc-EZqKI bVFsBN" tabindex="0" role="button"><i color="#202124" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">add</i><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Add data</span></button></div><div class="SidebarPane_ChevronWrapper--qm9hj3 jkhhYy"><button class="MuiButtonBase-root MuiIconButton-root jss2278" tabindex="0" type="button" title="Collapse Data box" style="float: right;"><span class="MuiIconButton-label"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">keyboard_arrow_up</i></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="SidebarPane_ItemBody--tqtqts fPzlkM"><div class="DatasetsWidget_Body--vtd0he okuaQ"><div class="sc-hKfvfE EnRhI"><div class="sc-dHMioH iIiajR"><div class="sc-fnebDD LFAtG"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">folder</i></div><p class="sc-kfYoZR sc-fKgJPI sc-fkmfBh jaxPpm cxbltl UoslS">input<span class="sc-bMQVVx fjQBSf">(245.46 MB)</span></p></div><ul class="sc-fArJxI gxnWBX"><ul class="sc-kuRTQD cprVKJ"><div role="button" class="sc-dHMioH sc-jwtsuN iIiajR klQLKp"><div class="sc-jfkLlK iQVGFZ"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">arrow_right</i></div><div class="sc-fnebDD LFAtG"><img src="./sandhya.team-4 _ Kaggle_files/dataset-thumbnail.jpg" class="sc-eCbnUT jxETEg"></div><div class="sc-eemifY gaEEDr"><div class="sc-oeezt cIOdML sc-iuhXDa dBEucF" data-tip="true" data-for="tooltip_components_eb5cc547-fc46-4db8-b41d-92e871dbc21f" currentitem="false"><p class="sc-kfYoZR sc-fKgJPI sc-fkmfBh jaxPpm cxbltl UoslS">surface-crack-detection</p><div class="__react_component_tooltip t788f9441-7176-4144-a711-c4bb612fae18 place-top type-dark" id="tooltip_components_eb5cc547-fc46-4db8-b41d-92e871dbc21f" data-id="tooltip"><style aria-hidden="true">
+  	.t788f9441-7176-4144-a711-c4bb612fae18 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t788f9441-7176-4144-a711-c4bb612fae18.place-top {
+        margin-top: -10px;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-bottom {
+        margin-top: 10px;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-left {
+        margin-left: -10px;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-right {
+        margin-left: 10px;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t788f9441-7176-4144-a711-c4bb612fae18.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Surface Crack Detection</div></div></div></div><div class="sc-fpPwup fnGzZo"><div class="sc-hzDicl gmQRCE"><div class="sc-inPsIi lfgyUs"><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_cb545cd7-b18d-408a-b1c0-cbe054656024" currentitem="false"><div role="button" class="sc-xoZJL hMcVcA"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">content_copy</i></div><div class="__react_component_tooltip t6543ced6-b024-4a53-8487-452b48e8fe71 place-top type-dark" id="tooltip_components_cb545cd7-b18d-408a-b1c0-cbe054656024" data-id="tooltip"><style aria-hidden="true">
+  	.t6543ced6-b024-4a53-8487-452b48e8fe71 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t6543ced6-b024-4a53-8487-452b48e8fe71.place-top {
+        margin-top: -10px;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-bottom {
+        margin-top: 10px;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-left {
+        margin-left: -10px;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-right {
+        margin-left: 10px;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t6543ced6-b024-4a53-8487-452b48e8fe71.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Copy file path</div></div></div><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_aeac43d5-b831-4087-92ae-7d9ff3482531" currentitem="false"><div role="button" class="sc-xoZJL hMcVcA"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">more_vert</i></div><div class="__react_component_tooltip t702552b9-3917-4f87-9f56-f2eb7c0fb54d place-top type-dark" id="tooltip_components_aeac43d5-b831-4087-92ae-7d9ff3482531" data-id="tooltip"><style aria-hidden="true">
+  	.t702552b9-3917-4f87-9f56-f2eb7c0fb54d {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-top {
+        margin-top: -10px;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-bottom {
+        margin-top: 10px;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-left {
+        margin-left: -10px;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-right {
+        margin-left: 10px;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t702552b9-3917-4f87-9f56-f2eb7c0fb54d.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">More actions</div></div></div></div><div class="mdc-menu-surface--anchor"><div aria-hidden="true" class="mdc-menu sc-dvXYtj eeRXkQ mdc-menu-surface" style="transform-origin: left top; left: 0px; top: 0px; max-height: 500px;"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">open_in_new</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Open in new tab</p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">cached</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Check for updates</p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">delete</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Remove</p></div></div></div></div></div></div></div></div></ul></ul></div><div class="sc-hKfvfE EnRhI"><div class="sc-dHMioH iIiajR"><div class="sc-fnebDD LFAtG"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">folder</i></div><p class="sc-kfYoZR sc-fKgJPI sc-fkmfBh jaxPpm cxbltl UoslS">output (44.1MB / 19.6GB)</p></div><ul class="sc-fArJxI gxnWBX"><ul class="sc-kuRTQD cprVKJ"><div role="button" class="sc-dHMioH sc-jwtsuN iIiajR klQLKp"><div class="sc-jfkLlK iQVGFZ"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">arrow_right</i></div><div class="sc-fnebDD LFAtG"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">folder</i></div><div class="sc-eemifY gaEEDr"><div class="sc-oeezt cIOdML sc-iuhXDa dBEucF" data-tip="true" data-for="tooltip_components_314aa58b-b175-49ca-aff3-83303687cd18" currentitem="false"><p class="sc-kfYoZR sc-fKgJPI sc-fkmfBh jaxPpm cxbltl UoslS">/kaggle/working</p><div class="__react_component_tooltip t72fae078-965e-4da6-8c2d-69fe2e94602b place-top type-dark" id="tooltip_components_314aa58b-b175-49ca-aff3-83303687cd18" data-id="tooltip"><style aria-hidden="true">
+  	.t72fae078-965e-4da6-8c2d-69fe2e94602b {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t72fae078-965e-4da6-8c2d-69fe2e94602b.place-top {
+        margin-top: -10px;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-bottom {
+        margin-top: 10px;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-left {
+        margin-left: -10px;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-right {
+        margin-left: 10px;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t72fae078-965e-4da6-8c2d-69fe2e94602b.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">/kaggle/working (1 directories)</div></div></div></div><div class="sc-fpPwup fnGzZo"><div class="sc-hzDicl gmQRCE"><div class="sc-inPsIi lfgyUs"><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_bf96be0e-0caa-469e-a0d1-cdf3e5bab7fb" currentitem="false"><div role="button" class="sc-xoZJL hMcVcA"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">content_copy</i></div><div class="__react_component_tooltip tc822c1e7-d203-434c-a4fd-a2d0ca182b23 place-top type-dark" id="tooltip_components_bf96be0e-0caa-469e-a0d1-cdf3e5bab7fb" data-id="tooltip"><style aria-hidden="true">
+  	.tc822c1e7-d203-434c-a4fd-a2d0ca182b23 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-top {
+        margin-top: -10px;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-bottom {
+        margin-top: 10px;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-left {
+        margin-left: -10px;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-right {
+        margin-left: 10px;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tc822c1e7-d203-434c-a4fd-a2d0ca182b23.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Copy file path</div></div></div></div><div class="sc-oeezt cIOdML" data-tip="true" data-for="tooltip_components_c62bd1d6-422b-444d-8750-b0a1a751392a" currentitem="false"><div role="button" class="sc-xoZJL hMcVcA"><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">sync</i></div><div class="__react_component_tooltip ta4e57e99-8443-42e3-b5de-96957ab75740 place-top type-dark" id="tooltip_components_c62bd1d6-422b-444d-8750-b0a1a751392a" data-id="tooltip"><style aria-hidden="true">
+  	.ta4e57e99-8443-42e3-b5de-96957ab75740 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.ta4e57e99-8443-42e3-b5de-96957ab75740.place-top {
+        margin-top: -10px;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-bottom {
+        margin-top: 10px;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-left {
+        margin-left: -10px;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-right {
+        margin-left: 10px;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .ta4e57e99-8443-42e3-b5de-96957ab75740.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style><div class="sc-hhIiOg eBGMfa">Refresh directory contents</div></div></div></div></div></div></ul></ul></div></div></div></div><div class="SidebarPane_Body--1owv1gk hobDGk"><div role="button" class="SidebarPane_ItemHeader--13ydw5o jmOAMS"><div class="SidebarPane_TitleWrapper--1mt9ft2 hKOChs">Settings</div><div class="SidebarPane_ButtonWrapper--1siykkc fvXTbe"></div><div class="SidebarPane_ChevronWrapper--qm9hj3 jkhhYy"><button class="MuiButtonBase-root MuiIconButton-root jss2278" tabindex="0" type="button" title="Collapse Settings box" style="float: right;"><span class="MuiIconButton-label"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">keyboard_arrow_up</i></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="SidebarPane_ItemBody--tqtqts fPzlkM"><div class="SettingsWidget_Body--17j9ae7 gBgRwR"><div class="SettingsWidgetItem_Body--spzd3y fdDggF"><div class="SettingsWidgetItem_NameWrapper--1bijx5r kLDECw">Language</div><div class="SettingsWidgetItem_ContentWrapper--fuic0c eDXtTS"><div class="mdc-menu-surface--anchor"><button class="sc-EZqKI iAregl" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Python</span><i color="#202124" sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">arrow_drop_down</i></button></div></div></div><div class="SettingsWidgetItem_Body--spzd3y fdDggF"><div class="SettingsWidgetItem_NameWrapper--1bijx5r kLDECw">Environment</div><div class="SettingsWidgetItem_ContentWrapper--fuic0c eDXtTS"><div class="DockerSelectorButton_ButtonWrapper--r9dyg9 fbAQhk"><button class="sc-EZqKI bGHMMK" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Preferences</span></button></div></div></div><div class="SettingsWidgetItem_Body--spzd3y fdDggF"><div class="SettingsWidgetItem_ContentWrapper--fuic0c eDXtTS"><div class="PhoneVerificationInfoWidget_Text--dg984m kPwbGx">Want more power? Access free GPU or turn on an internet connection. <a href="https://www.kaggle.com/account/phone/number?returnUrl=/sandhyasivaji/sandhya-team-4/edit/run/81421272" class="sc-carFqZ sc-iTVJFM jXJZzc gByKAs">Get phone verified</a></div></div></div></div></div></div><div class="SidebarPane_Body--1owv1gk hobDGk"><div role="button" class="SidebarPane_ItemHeader--13ydw5o jmOAMS"><div class="SidebarPane_TitleWrapper--1mt9ft2 hKOChs">Schedule a notebook run</div><div class="SidebarPane_ButtonWrapper--1siykkc fvXTbe"></div><div class="SidebarPane_ChevronWrapper--qm9hj3 jkhhYy"><button class="MuiButtonBase-root MuiIconButton-root jss2278" tabindex="0" type="button" title="Collapse Schedule a notebook run box" style="float: right;"><span class="MuiIconButton-label"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">keyboard_arrow_up</i></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="SidebarPane_ItemBody--tqtqts fPzlkM"><div class="ScheduleWidget_Body--vyi6mu djvJEx"><p class="sc-kfYoZR sc-fKgJPI gpHTvJ cxbltl">Schedule this notebook to run and save a new version on a future date. <a class="sc-carFqZ sc-iTVJFM btdZMX gByKAs">View all your scheduled notebooks.</a></p><div><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div><div role="listbox" class="sc-lgWdIC hHBWHi ScheduleWidget_StyledSelect--bv1ue5 cQWzAM mdc-select mdc-select--outlined"><i class="mdc-select__dropdown-icon"></i><select tabindex="0" class="mdc-select__native-control "><option value="scheduledTime" aria-selected="true">Frequency</option><option value="datasourceUpdate" aria-selected="false">New data source version (once daily)</option></select><div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched" notch="49.5"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" style="width: 57.5px;"><label class="mdc-floating-label mdc-floating-label--float-above" style="">Trigger</label></div><div class="mdc-notched-outline__trailing"></div></div></div><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div><div><div role="listbox" class="sc-lgWdIC hHBWHi ScheduleWidget_StyledSelect--bv1ue5 cQWzAM mdc-select mdc-select--outlined"><i class="mdc-select__dropdown-icon"></i><select tabindex="0" class="mdc-select__native-control "><option value="daily" aria-selected="false">daily</option><option value="weekly" aria-selected="false">weekly</option><option value="monthly" aria-selected="true">monthly</option></select><div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched" notch="69"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" style="width: 77px;"><label class="mdc-floating-label mdc-floating-label--float-above" style="">Frequency</label></div><div class="mdc-notched-outline__trailing"></div></div></div><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div><fieldset class="ScheduleWidget_StartDateGroup--eijh3c kRnSbM"><legend class="ScheduleWidget_StartDateLegend--1y0s5dt gWxoLN">Start Date</legend><div class="ScheduleWidget_FlexMeta--mec3gz CzBpU"><div class="rdt sc-dfqoUd kaVFan ScheduleWidget_StyledDateTimePicker--1omyvwj tdOmL"><input type="text" class="form-control" value="12/07/2021"><div class="rdtPicker"><div class="rdtDays"><table><thead><tr><th class="rdtPrev"><span>‹</span></th><th class="rdtSwitch" colspan="5" data-value="11">December 2021</th><th class="rdtNext"><span>›</span></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td data-value="28" class="rdtDay rdtOld">28</td><td data-value="29" class="rdtDay rdtOld">29</td><td data-value="30" class="rdtDay rdtOld">30</td><td data-value="1" class="rdtDay">1</td><td data-value="2" class="rdtDay">2</td><td data-value="3" class="rdtDay">3</td><td data-value="4" class="rdtDay">4</td></tr><tr><td data-value="5" class="rdtDay">5</td><td data-value="6" class="rdtDay rdtToday">6</td><td data-value="7" class="rdtDay rdtActive">7</td><td data-value="8" class="rdtDay">8</td><td data-value="9" class="rdtDay">9</td><td data-value="10" class="rdtDay">10</td><td data-value="11" class="rdtDay">11</td></tr><tr><td data-value="12" class="rdtDay">12</td><td data-value="13" class="rdtDay">13</td><td data-value="14" class="rdtDay">14</td><td data-value="15" class="rdtDay">15</td><td data-value="16" class="rdtDay">16</td><td data-value="17" class="rdtDay">17</td><td data-value="18" class="rdtDay">18</td></tr><tr><td data-value="19" class="rdtDay">19</td><td data-value="20" class="rdtDay">20</td><td data-value="21" class="rdtDay">21</td><td data-value="22" class="rdtDay">22</td><td data-value="23" class="rdtDay">23</td><td data-value="24" class="rdtDay">24</td><td data-value="25" class="rdtDay">25</td></tr><tr><td data-value="26" class="rdtDay">26</td><td data-value="27" class="rdtDay">27</td><td data-value="28" class="rdtDay">28</td><td data-value="29" class="rdtDay">29</td><td data-value="30" class="rdtDay">30</td><td data-value="31" class="rdtDay">31</td><td data-value="1" class="rdtDay rdtNew">1</td></tr><tr><td data-value="2" class="rdtDay rdtNew">2</td><td data-value="3" class="rdtDay rdtNew">3</td><td data-value="4" class="rdtDay rdtNew">4</td><td data-value="5" class="rdtDay rdtNew">5</td><td data-value="6" class="rdtDay rdtNew">6</td><td data-value="7" class="rdtDay rdtNew">7</td><td data-value="8" class="rdtDay rdtNew">8</td></tr></tbody></table></div></div></div><i sizevalue="18px" class="rmwc-icon google-material-icons sc-gKAaRy iExUpp">calendar_today</i></div></fieldset><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div><div role="listbox" class="sc-lgWdIC hHBWHi ScheduleWidget_StyledSelect--bv1ue5 cQWzAM mdc-select mdc-select--outlined"><i class="mdc-select__dropdown-icon"></i><select tabindex="0" class="mdc-select__native-control "><option value="1" aria-selected="true">1</option><option value="2" aria-selected="false">2</option><option value="3" aria-selected="false">3</option><option value="4" aria-selected="false">4</option><option value="5" aria-selected="false">5</option><option value="6" aria-selected="false">6</option><option value="7" aria-selected="false">7</option><option value="8" aria-selected="false">8</option><option value="9" aria-selected="false">9</option><option value="10" aria-selected="false">10</option></select><div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched" notch="101.25"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" style="width: 109.25px;"><label class="mdc-floating-label mdc-floating-label--float-above" style="">Number of runs</label></div><div class="mdc-notched-outline__trailing"></div></div></div><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div></div><button class="sc-EZqKI vMBwD" tabindex="0" role="button"><span class="sc-kLojOw sc-iklJeh eGLYxv hbusih">Save</span></button><div class="ScheduleWidget_Spacer--rxa2ww gEsWGk"></div></div></div></div></div><div class="SidebarPane_Body--1owv1gk hobDGk"><div role="button" class="SidebarPane_ItemHeader--13ydw5o jmOAMS"><div class="SidebarPane_TitleWrapper--1mt9ft2 hKOChs">Code Help</div><div class="SidebarPane_ButtonWrapper--1siykkc fvXTbe"></div><div class="SidebarPane_ChevronWrapper--qm9hj3 jkhhYy"><button class="MuiButtonBase-root MuiIconButton-root jss2278" tabindex="0" type="button" title="Expand Code Help box" style="float: right;"><span class="MuiIconButton-label"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">keyboard_arrow_down</i></span><span class="MuiTouchRipple-root"></span></button></div></div></div></div></div></div></div></div><div class="sc-jYKCQm hvgDcX" style="position: relative; flex-basis: 40px; display: flex; flex-direction: column;"><div direction="vertical" class="sc-bxLXlR bFzjJg"><div role="separator" aria-orientation="horizontal"></div></div><div style="height: 40px;"><div class="Terminal_Body--io7fwe iWgsrB"><div class="TerminalHeader_Body--1riogjs bquFUz"><div class="TerminalHeader_TitleWrapper--bac7xk fcaHZu">Console</div><button title="Show console" class="TerminalHeader_TerminalButton--gq97xh TerminalHeader_TerminalTransparentButton--14ic37w dpVwhn gjiUup"><i sizevalue="20px" class="rmwc-icon google-material-icons sc-gKAaRy iExRbS">keyboard_arrow_up</i></button></div></div></div></div><span></span></div></div><div class="sc-hGwcmR kinTUY"></div><div aria-live="assertive" aria-atomic="true" aria-hidden="true" class="sc-ckXLN enbxRL mdc-snackbar mdc-snackbar--leading"><div class="mdc-snackbar__surface"><div role="status" aria-live="polite" class="mdc-snackbar__label"><div style="display: none;"></div></div><div class="mdc-snackbar__actions"></div></div></div></div></div></div><div id="modal-root"></div>
+<script nonce="">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-12629138-1', {
+        'optimize_id': 'GTM-52LNT9S',
+        'displayFeaturesTask': null,
+        'send_page_view': false,
+    });
+</script>
+<script nonce="" async="" src="./sandhya.team-4 _ Kaggle_files/js(1)"></script>
+<div aria-hidden="true" class="mdc-menu sc-dvXYtj eeRXkQ mdc-menu-surface" style="transform-origin: left top; left: 415.594px; top: 69px; max-height: 563px;"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Code</p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Markdown</p></div></div></div></div><div aria-hidden="true" class="mdc-menu sc-dvXYtj eeRXkQ SessionMenu_Menu--oip47e jSvsbg mdc-menu-surface"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">settings_backup_restore</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl"><p class="sc-kfYoZR sc-fKgJPI eSXnAK cxbltl">Restart &amp; Clear Cell Outputs</p></p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">info</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl"><p class="sc-kfYoZR sc-fKgJPI eSXnAK cxbltl">View Session Metrics</p></p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">open_in_new</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl"><p class="sc-kfYoZR sc-fKgJPI eSXnAK cxbltl">Upgrade to Google Cloud AI Notebooks</p></p></div></div></div></div><div class="sc-gtbgjk apljN sc-fulamw fqFnLj mdc-menu-surface" style="transform-origin: left bottom; left: 0px; bottom: 8px; max-height: 624px;"><div role="document"><div class="sc-xQvhf lbZgxt"><ul class="km-list km-list--icon km-list--three-line sc-dzQVHJ jcSckT"><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-igRwjb kFMmdf"><a class="sc-khIgEk hQhHpX"><div class="sc-cOifOu haQoIp"><div class="sc-Arkif eJDRKz"><img src="./sandhya.team-4 _ Kaggle_files/default-thumb.png"></div><div class="sc-jgPyTC fuJtcf"><div class="sc-iCoGMd sc-dIvrsQ sc-gSYDnn cHRTxu biCrYn lfVdgH">sandhya.team-4</div><span class="sc-ezzafa sc-bYwzuL sc-laZMeE fQxGZC fDDjHD illQEd">Interactive Session</span><span class="sc-ezzafa sc-bYwzuL sc-laZMeE fQxGZC fDDjHD illQEd">Running: <span>14 hours</span></span></div></div></a><div class="sc-hTRkXV ePWFTl"><div class="sc-eaHRBM eupezl"><p class="sc-bCwfaz sc-iwajpm jLqmUy kydRHc"><span>14 hours</span></p><div class="mdc-menu-surface--anchor"><button aria-label="more_horiz" class="sc-jSFjdj rSeVs undefined google-material-icons">more_horiz</button></div></div></div></div></li></ul><ul class="km-list"><li class="sc-dPaNzc fqbJCS"><div class="sc-bBjRSN kTXmvo sc-dYNnGZ fLmpCS"><a class="sc-khIgEk hQhHpX"><div class="sc-cOifOu haQoIp"><div class="sc-Arkif eJDRKz"><div class="sc-gRGMhz eBEFmJ"><i emphasis="high" sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-cviYoQ bsmEAT">auto_awesome_motion</i><div color="#FAE041" class="sc-gRYxWZ bAmYiH">1</div></div></div><div class="sc-iCoGMd sc-dIvrsQ sc-gSYDnn cHRTxu biCrYn lfVdgH"><p class="sc-kfYoZR sc-fKgJPI gpHTvJ cxbltl">1 Active Event</p></div></div></a><div class="sc-hTRkXV ePWFTl"><i emphasis="high" sizevalue="24px" role="button" tabindex="0" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm">expand_more</i></div></div></li></ul></div></div></div><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./sandhya.team-4 _ Kaggle_files/anchor.html" width="256" height="60" role="presentation" name="a-tepidhkba3m2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./sandhya.team-4 _ Kaggle_files/saved_resource.html"></iframe></div><div aria-hidden="true" class="mdc-menu sc-dvXYtj eeRXkQ sc-cTNEyG cobvtr mdc-menu-surface"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><a href="https://www.kaggle.com/s/21139425/edit" target="_blank" class="sc-gsWcmt grZHMV"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">edit</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Edit</p></div></div></a><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><i sizevalue="24px" class="rmwc-icon google-material-icons sc-gKAaRy iExPwm sc-fcmMJX bRzrLL">stop</i><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Stop Session</p></div></div></div></div><a href="blob:https://www.kaggle.com/eb4d61b7-271a-4bea-8d87-ce6d20998d59" download="sandhya-team-4.ipynb" style="display: none;"></a><div aria-hidden="true" class="mdc-menu sc-dvXYtj eeRXkQ mdc-menu-surface"><div role="menu" class="mdc-list mdc-menu__items mdc-list"><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">Python</p></div></div><div role="menuitem" tabindex="0" class="sc-fuISkM cnWRso mdc-ripple-upgraded sc-fuISkM cnWRso mdc-list-item"><div class="sc-GvhzO kSqeJg"><p class="sc-kfYoZR sc-fKgJPI jaxPpm cxbltl">R</p></div></div></div></div></body></html>
